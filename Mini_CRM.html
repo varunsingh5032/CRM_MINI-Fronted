@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini CRM</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  #customer-form {
+    margin-top: 30px;
+  }
+  #customer-list {
+    margin-top: 15px;
+  }
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background: #555;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mini CRM</h1>
+</header>
+<div class="container">
+  <div id="customer-form">
+    <h2>Add Customer</h2>
+    <form>
+      <input type="text" id="name" placeholder="Customer Name">
+      <input type="email" id="email" placeholder="Customer Email">
+      <input type="submit" value="Add Customer">
+    </form>
+  </div>
+  <div id="customer-list">
+    <h2>Customers</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
